@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-userless-reddit",
-  "version": "0.1.0",
+  "version": "0.1.1-alpha",
   "description": "Reddit integration on n8n with an easy authentication",
   "keywords": [
     "n8n-community-node-package",

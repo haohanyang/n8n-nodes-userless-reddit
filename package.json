@@ -1,9 +1,10 @@
 {
   "name": "n8n-nodes-userless-reddit",
   "version": "0.0.1",
-  "description": "Reddit integration on n8n with OAuth2 Client Credentials Grant Type",
+  "description": "Reddit integration on n8n with an easy authentication",
   "keywords": [
-    "n8n-community-node-package"
+    "n8n-community-node-package",
+    "reddit"
   ],
   "license": "MIT",
   "homepage": "https://github.com/haohanyang/n8n-nodes-userless-reddit",

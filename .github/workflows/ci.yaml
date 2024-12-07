@@ -1,0 +1,35 @@
+name: Build and upload the artifacts
+
+on:
+  push:
+    branches: [ "*" ]
+  pull_request:
+    branches: [ "*" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - uses: actions/setup-node@v4
+      with:
+        node-version: 20
+    - name: Get metadata
+      id: metadata
+      run: |
+        echo node-version=$(node -e "console.log(require('./package.json').version)") >> $GITHUB_OUTPUT
+        echo node-id=$(node -e "console.log(require('./package.json').name)") >> $GITHUB_OUTPUT
+    - name: Set up pnpm
+      run: corepack enable pnpm
+    - name: Install dependencies
+      run: pnpm install
+    - name: Lint
+      run: pnpm run lint
+    - name: Build
+      run: pnpm run build
+    - name: Upload build artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: ${{ steps.metadata.outputs.node-id }}-${{ steps.metadata.outputs.node-version }}
+        path: dist
+        retention-days: 3

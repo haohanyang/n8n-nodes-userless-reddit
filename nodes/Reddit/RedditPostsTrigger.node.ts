@@ -19,18 +19,19 @@ interface RedditPost {
 	url: string;
 }
 
-export class RedditPostsReadTrigger implements INodeType {
+export class RedditPostsTrigger implements INodeType {
 	description: INodeTypeDescription = {
 		displayName: 'Reddit Posts Trigger',
-		name: 'redditPostTrigger',
+		name: 'redditPostsTrigger',
 		group: ['trigger'],
 		icon: 'file:reddit.svg',
 		polling: true,
 		version: 1,
-		description: 'Starts a workflow when new reddit posts published',
+		description: 'Starts a workflow when new Reddit posts published',
 		defaults: {
 			name: 'Reddit Posts Trigger',
 		},
+		documentationUrl: 'https://github.com/haohanyang/n8n-nodes-userless-reddit/wiki/Triggers',
 		inputs: [],
 		outputs: ['main'],
 		credentials: [

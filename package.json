@@ -1,7 +1,7 @@
 {
   "name": "n8n-nodes-userless-reddit",
   "version": "0.0.1",
-  "description": "",
+  "description": "Reddit integration on n8n with OAuth2 Client Credentials Grant Type",
   "keywords": [
     "n8n-community-node-package"
   ],

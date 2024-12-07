@@ -1,2 +1,17 @@
 .DS_Store
 *.tsbuildinfo
+.vscode/
+.github/
+node_modules/
+.editorconfig
+.eslintrc.js
+.eslintrc.prepublish.js
+CODE_OF_CONDUCT.md
+.prettierrc.js
+docker-compose.yaml
+gulpfile.js
+tsconfig.json
+tslint.json
+.gitignore
+nodes/
+credentials/

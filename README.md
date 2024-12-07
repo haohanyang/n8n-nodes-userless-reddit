@@ -14,7 +14,9 @@ The package also provides a Reddit Posts Trigger node which triggers a workflow 
 
 ## Installation
 
-Follow the [installation guide](https://docs.n8n.io/integrations/community-nodes/installation/) in the n8n community nodes documentation. Install with the package name `n8n-nodes-userless-reddit`.
+Follow the [installation guide](https://docs.n8n.io/integrations/community-nodes/installation/) in the n8n community nodes documentation. In the GUI, install with the package name `n8n-nodes-userless-reddit`.
+
+You can also install manually. Check [docker-compose.yaml](./docker-compose.yaml) for details
 
 ## Credentials
 

@@ -1,0 +1,12 @@
+# https://docs.n8n.io/integrations/creating-nodes/deploy/install-private-nodes/
+services:
+  n8n:
+    image: n8nio/n8n
+    container_name: n8n-nodes-dev
+    environment:
+      TZ: Europe/Stockholm
+    ports:
+      - 5678:5678
+    volumes:
+      - ./dist/nodes:/home/node/.n8n/custom/nodes
+      - ./dist/credentials:/home/node/.n8n/custom/credentials

@@ -1,6 +1,6 @@
 {
-  "name": "n8n-nodes-<...>",
-  "version": "0.1.0",
+  "name": "n8n-nodes-userless-reddit",
+  "version": "0.0.1",
   "description": "",
   "keywords": [
     "n8n-community-node-package"
@@ -8,12 +8,12 @@
   "license": "MIT",
   "homepage": "",
   "author": {
-    "name": "",
+    "name": "Haohan Yang",
     "email": ""
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/<...>/n8n-nodes-<...>.git"
+    "url": "https://github.com/haohanyang/n8n-nodes-userless-reddit"
   },
   "engines": {
     "node": ">=18.10",

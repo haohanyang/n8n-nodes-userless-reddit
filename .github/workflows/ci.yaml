@@ -3,6 +3,9 @@ name: Build and upload the artifacts
 on:
   push:
     branches: [ "*" ]
+    paths-ignore:
+      - README.md
+      - images/*
   pull_request:
     branches: [ "*" ]
 

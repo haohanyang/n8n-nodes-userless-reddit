@@ -38,7 +38,7 @@
       "dist/credentials/RedditApplicationOnlyOAuth2Api.credentials.js"
     ],
     "nodes": [
-      "dist/nodes/Reddit/RedditPostsReadTrigger.node.js"
+      "dist/nodes/Reddit/RedditPostsTrigger.node.js"
     ]
   },
   "devDependencies": {

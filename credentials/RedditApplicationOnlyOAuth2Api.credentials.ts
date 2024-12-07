@@ -11,7 +11,7 @@ import {
 export class RedditApplicationOnlyOAuth2Api implements ICredentialType {
 	name = 'redditOAuth2ApplicationOnlyApi';
 	displayName = 'Reddit Application Only OAuth2 API';
-	icon: Icon = 'file:../nodes/RedditPostReadTrigger/reddit.svg';
+	icon: Icon = 'file:reddit.svg';
 	documentationUrl = 'https://github.com/haohanyang/n8n-nodes-userless-reddit#credentials';
 	properties: INodeProperties[] = [
 		{

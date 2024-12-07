@@ -1,3 +1,9 @@
+## 0.1.1 - 2024-12-07
+
+### Changed
+
+- Fix the wrong node file path
+
 ## 0.1.0 - 2024-12-07
 
 Initial release with `redditOAuth2ApplicationOnlyApi` and `redditPostsTrigger`.

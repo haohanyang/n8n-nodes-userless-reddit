@@ -1,5 +1,6 @@
 import {
 	IAuthenticateGeneric,
+	Icon,
 	ICredentialDataDecryptedObject,
 	ICredentialTestRequest,
 	ICredentialType,
@@ -12,8 +13,8 @@ import {
 export class RedditApplicationOnlyOAuth2Api implements ICredentialType {
 	name = 'redditOAuth2ApplicationOnlyApi';
 	displayName = 'Reddit Application Only OAuth2 API';
+	icon: Icon = 'file:../nodes/RedditPostReadTrigger/reddit.svg';
 	// documentationUrl = 'userless-reddit';
-
 	properties: INodeProperties[] = [
 		{
 			displayName: 'Session Token',
@@ -50,7 +51,7 @@ export class RedditApplicationOnlyOAuth2Api implements ICredentialType {
 			url: 'https://www.reddit.com/api/v1/access_token',
 			headers: {
 				'Content-Type': 'application/x-www-form-urlencoded',
-				'User-Agent': 'n8n-nodes-userless-reddit',
+				'User-Agent': 'n8n',
 			},
 			auth: {
 				username: credentials.clientId as string,
@@ -79,7 +80,7 @@ export class RedditApplicationOnlyOAuth2Api implements ICredentialType {
 			url: '/api/v1/me',
 			headers: {
 				'Content-Type': 'application/json',
-				'User-Agent': 'n8n-nodes-userless-reddit',
+				'User-Agent': 'n8n',
 			},
 		},
 	};

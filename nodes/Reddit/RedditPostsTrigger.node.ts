@@ -31,7 +31,8 @@ export class RedditPostsTrigger implements INodeType {
 		defaults: {
 			name: 'Reddit Posts Trigger',
 		},
-		documentationUrl: 'https://github.com/haohanyang/n8n-nodes-userless-reddit/wiki/Triggers',
+		documentationUrl:
+			'https://github.com/haohanyang/n8n-nodes-userless-reddit#reddit-posts-trigger',
 		inputs: [],
 		outputs: ['main'],
 		credentials: [

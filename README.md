@@ -37,7 +37,7 @@ TODO
 ### Make Requests to Reddit API
 
 You can make authenticated HTTP request to Reddit using [HTTP request node](https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.httprequest/) and **Reddit Application Only OAuth2 API**. Simply add the credential to "authentication" section of HTTP request node.
-
+![http](images/auth-http.png)
 ### Reddit Posts Trigger
 
 You should have a configured **Reddit Application Only OAuth2 API** to use the trigger. You can enter the subreddit, max number of posts to fetch each time and polling interval.
